@@ -8,6 +8,9 @@ this project adheres to
 
 ## [Unreleased]
 
+- Fix #658, #656, #660: document supply-chain audit, credential arm constants,
+  and ci-local manifest classification vocabulary.
+
 ### Added
 
 - Add a per-caller token-bucket rate limit to the verification service, checked
