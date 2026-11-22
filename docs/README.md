@@ -81,6 +81,7 @@ These live next to the code they describe.
 | Document                                                            | Answers                                                                                      |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | [wasm](../wasm/README.md)                                           | What the js/wasm signing core exposes and how it is built.                                   |
+| [bindings](bindings-index.md)                                     | Index of all language bindings, their install methods, and platform support.                 |
 | [wasm/ts](../wasm/ts/README.md)                                     | How to use the `@soroauth/wasm` TypeScript wrapper.                                          |
 | [bindings/jvm](../bindings/jvm/README.md)                           | How to call soroauth from Java 22+ via Panama FFM.                                           |
 | [bindings/rust](../bindings/rust/README.md)                         | How to use the Rust `soroauth` crate.                                                        |
