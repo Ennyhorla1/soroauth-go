@@ -8,8 +8,9 @@ this project adheres to
 
 ## [Unreleased]
 
-- Fix #658, #656, #660: document supply-chain audit, credential arm constants,
-  and ci-local manifest classification vocabulary.
+- Fix #658: docs: record the pre-merge supply-chain audit in CONTRIBUTING
+- Fix #656: docs: document the credential arm constants
+- Fix #660: docs: document the ci-local manifest's classification vocabulary
 
 ### Added
 
