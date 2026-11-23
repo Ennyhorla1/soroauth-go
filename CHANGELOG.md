@@ -8,6 +8,14 @@ this project adheres to
 
 ## [Unreleased]
 
+- Fix #658: docs: record the pre-merge supply-chain audit in CONTRIBUTING
+- Fix #656: docs: document the credential arm constants
+- Fix #660: docs: document the ci-local manifest's classification vocabulary
+
+- Fix #658: docs: record the pre-merge supply-chain audit in CONTRIBUTING
+- Fix #656: docs: document the credential arm constants
+- Fix #660: docs: document the ci-local manifest's classification vocabulary
+
 ### Added
 
 - Add a per-caller token-bucket rate limit to the verification service, checked
