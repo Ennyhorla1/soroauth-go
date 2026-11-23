@@ -1219,3 +1219,7 @@ First release. Unaudited.
   `Signed` flags before submitting.
 
 [0.1.0]: https://github.com/soroauth/soroauth-go/releases/tag/v0.1.0
+
+- Fix #658, #656 and #660: docs: record the pre-merge supply-chain audit in
+  CONTRIBUTING, document credential arm constants, and explain ci-local manifest
+  classification vocabulary.
