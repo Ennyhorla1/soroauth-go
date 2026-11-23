@@ -8,6 +8,10 @@ this project adheres to
 
 ## [Unreleased]
 
+- docs: record the pre-merge supply-chain audit in CONTRIBUTING (#658)
+- docs: document the credential arm constants (#656)
+- docs: document the ci-local manifest's classification vocabulary (#660)
+
 - docs: record pre-merge supply-chain audit, document credential arm constants,
   and explain ci-local manifest classification vocabulary (#658, #656, #660)
 
@@ -21,14 +25,6 @@ this project adheres to
 
 ### Added
 
-- `examples/opentelemetry` traces the whole `rpcflow.SignAndSubmit` flow as one
-  OpenTelemetry trace: record pass, signing, enforcing pass, submission and
-  polling, with the two passes' resource fees and their difference as
-  attributes. It wraps `rpcflow.Client` and each `soroauth.Signer` rather than
-  forking the flow, lives in its own module so OpenTelemetry never enters the
-  root `go.mod`, ships `cmd/trace-transfer` for testnet with a real captured
-  trace in its README, and asserts that no span carries a secret, an entry or a
-  signature. (#422)
 - Add a per-caller token-bucket rate limit to the verification service, checked
   before the body is read and before a concurrency slot is taken. A refusal is
   `429` with `Retry-After`; `AUTH_TOKEN` accepts a comma-separated list so
@@ -237,12 +233,6 @@ this project adheres to
 
 ### Changed
 
-- `soroauth explain-error` now exits 1 when the entry decodes but cannot be
-  inspected (for example, a muxed credential address), in text mode as well as
-  with `--json`. Text mode used to print the error and exit 0, and the `--json`
-  exit 1 was undocumented; the code is now listed in `explain-error -h`. Found
-  by the new test that holds every documented exit code to the implementation.
-  (#669)
 - **C shared-library ABI** (`bindings/c`) builds the signing core as a
   `c-shared` library and exposes the authorization operations and typed errors
   through a JSON-based C interface. (#339)
